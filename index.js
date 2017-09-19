@@ -51,8 +51,8 @@ function updateScene(frameCount) {
       const y = radius * Math.sin(i / 360 * PI) * noiseFactor
       geometry.vertices.push(
         new THREE.Vector3(
-          x + step / STEPS * width - width / 2,
-          y + step / STEPS * height - height / 2,
+          x + p * width - width / 2,
+          y + p * height - height / 2,
           0
         )
       )
